@@ -8,7 +8,7 @@ const Button: FC<ButtonProps> = ({children, className, appearence='small', ...pr
         <button className={cn(styles['button'], styles['accent'], className,{
             [styles['small']]: appearence === 'small',
             [styles['big']]: appearence === 'big'
-        })} onClick={()=>console.log("kl")} {...props}>{children}</button>
+        })} {...props}>{children}</button>
      );
 }
  
